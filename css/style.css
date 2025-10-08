@@ -1,17 +1,6 @@
 :root {
-    --primary-color: #f0db4f;
-    --secondary-color: #f9f9f9; /* helles Grau statt Dunkelgrau */
-    --text-color: #222222;      /* dunkler Text für bessere Lesbarkeit */
+    --text-color: #222222;
     --link-color: #1e90ff;
-    --link-hover-color: #f0db4f;
-    --hover-white: #eaeaea;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -20,7 +9,6 @@ html, body {
     min-height: 100%;
     color: var(--text-color);
     background: linear-gradient(to top, #2196f3, #00bcd4, #ffffff);
-
 }
 
 .wrapper {
@@ -41,18 +29,6 @@ html, body {
     font-weight: 500;
     color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar-nav .nav-link:hover {
-    background-color: var(--hover-white);
-    color: var(--text-color);
-}
-
-section {
-    background-color: var(--secondary-color);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -76,11 +52,6 @@ a {
     color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s;
-}
-
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
 }
 
 .card {
